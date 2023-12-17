@@ -1,4 +1,3 @@
 #!/bin/bash
 
-docker build -t private-isu-benchmarker .
-docker run --network host -i private-isu-benchmarker /opt/go/bin/benchmarker -t http://host.docker.internal -u /opt/go/userdata
+./bin/benchmarker -t "http://localhost:8080" -u ./userdata
